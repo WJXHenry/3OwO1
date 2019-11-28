@@ -44,4 +44,12 @@ public class MoodEventTest {
         testEvent.setPhotographPath(photographPath);
         assertEquals(photographPath, testEvent.getPhotographPath());
     }
+
+    @Test
+    public void testLocationDescription() {
+        MoodEvent testEvent = new MoodEvent(EmotionalState.HAPPY);
+        String locationDescription = "Location Description";
+        testEvent.setLocationDescription(locationDescription);
+        assertEquals(locationDescription, testEvent.getLocationDescription());
+    }
 }
